@@ -35,7 +35,8 @@ ul {
 /* Home */
 
 article#home {
-    height: 90vh;
+    height: 490px;
+    margin-bottom: 40px;
 }
 
 #home p {
@@ -50,10 +51,9 @@ article#home {
     color: #00A5CF;
 }
 
-img#img-home {
-    transform: translateY(50px);
+#img-home {
+    display: block;
     margin: auto;
-    display: flex;
     height: 300px;
     width: 300px;
 }
@@ -61,10 +61,11 @@ img#img-home {
 /* Sobre mim */
 
 article#sobre {
+    height: 490px;
     color: black;
-    background-color: #FFEAEE;
-    height: 90vh;
+    background-color: #F4F3EE;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #img-sobre {
@@ -73,8 +74,8 @@ article#sobre {
     display: block;
     margin: auto;
     border-radius: 50%;
-    border: 2px solid black;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    border: 4px solid #002129;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
 }
 
 #sobre aside {
@@ -84,4 +85,12 @@ article#sobre {
     margin-top: 40px;
     padding: 10px;
     width: 80vw;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.459);
+}
+
+#sobre h2 {
+    font-size: 2em;
+    color: #00A5CF;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #00000071;
 }
