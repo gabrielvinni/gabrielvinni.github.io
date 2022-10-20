@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    background-color: #181818;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #002129;
+    height: 10vh;
+}
+
+header h1 {
+    padding-left: 12px;
+}
+
+nav {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Home */
+
+article#home {
+    height: 90vh;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin: auto;
+    max-width: 250px;
+    padding-top: 60px;
+}
+
+#home strong {
+    font-size: 1.3em;
+    color: #00A5CF;
+}
+
+img#img-home {
+    transform: translateY(50px);
+    margin: auto;
+    display: flex;
+    height: 300px;
+    width: 300px;
+}
+
+/* Sobre mim */
+
+article#sobre {
+    color: black;
+    background-color: #FFEAEE;
+    height: 90vh;
+    padding-top: 40px;
+}
+
+#img-sobre {
+    height: 270px;
+    width: 270px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+}
+
+#sobre aside {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.384);
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 80vw;
+}
