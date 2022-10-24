@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body {
@@ -90,7 +91,37 @@ article#sobre {
 
 #sobre h2 {
     font-size: 2em;
-    color: #00A5CF;
+    color: #00ccff;
     margin-bottom: 10px;
     text-shadow: 1px 1px 2px #00000071;
+}
+
+/* Habilidades */
+
+article#habilidades {
+    padding: 10px;
+}
+
+hr.linha {
+    margin: auto;
+    width: 85vw;
+    margin: 10px;
+    border-color: gray;
+}
+
+img.logo {
+    width: 70px;
+    border-radius: 50%;
+}
+
+#p-html, #p-css, #p-js {
+    
+}
+
+p.t {
+    
+}
+
+article#habilidades > div {
+    
 }
