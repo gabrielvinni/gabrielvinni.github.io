@@ -114,6 +114,10 @@ img.logo {
     border-radius: 50%;
 }
 
+img.logo:last-child {
+    width: 20px;
+}
+
 #phtml, #pcss, #pjs {
     margin-left: 10px;
 
@@ -135,6 +139,7 @@ article#habilidades > div {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
 
     height: 64px;
     transition: height 400ms;
@@ -189,4 +194,22 @@ div.BT > #ba1, #ba2 {
     100% {
         rotate: 0deg;
     }
+}
+
+/* Projetos */
+
+article#projetos {
+    
+}
+
+div.content {
+    display: grid;
+    
+}
+
+div.itens {
+    width: 250px;
+    height: 150px;
+    background-color: white;
+    margin: 10px;
 }
