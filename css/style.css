@@ -103,6 +103,10 @@ article#habilidades {
     margin: auto;
 }
 
+article#habilidades > h2 {
+    margin-left: 10px;
+}
+
 hr.linha {
     margin: auto;
     margin: 10px;
@@ -199,17 +203,32 @@ div.BT > #ba1, #ba2 {
 /* Projetos */
 
 article#projetos {
-    
+    max-width: 250px;
+    margin: auto;
 }
 
 div.content {
-    display: grid;
-    
+    display: block;
+    margin: auto;
+}
+
+.content > label, div.itens {
+    cursor: pointer;
+}
+
+.content > label {
+    display: block;
+    margin-top: 20px;
 }
 
 div.itens {
     width: 250px;
     height: 150px;
     background-color: white;
-    margin: 10px;
+}
+
+/* Roda pé */
+
+footer {
+    margin-top: 40px;
 }
