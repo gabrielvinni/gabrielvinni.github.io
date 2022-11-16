@@ -219,6 +219,7 @@ div.content {
 .content > label {
     display: block;
     margin-top: 20px;
+    text-align: center;
 }
 
 div.itens {
@@ -227,6 +228,23 @@ div.itens {
     background-color: white;
 }
 
+article#projetos div#item1 {
+    background: url(../imgs/login-img.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+article#projetos div#item2 {
+    background: url(../imgs/cordel-img.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+article#projetos div#item3 {
+    background: url(../imgs/android-img.png);
+    background-size: cover;
+    background-position: center center;
+}
 /* Roda pé */
 
 footer {
