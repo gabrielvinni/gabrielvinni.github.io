@@ -57,3 +57,19 @@ function txt3() {
         esp2.style.height = '60px'
     }
 }
+
+function menu() {
+    if(mn.style.display == 'block') {
+        mn.style.display = 'none'
+        barra1.style.animation = 'br1v .7s forwards'
+        barra2.style.animation = 'br2v .7s forwards'
+        barra3.style.animation = 'br3v .7s forwards'
+        topo.style.height = '53px'
+    }else {
+        mn.style.display = 'block'
+        barra1.style.animation = 'br1 .7s forwards'
+        barra2.style.animation = 'br2 .7s forwards'
+        barra3.style.animation = 'br3 .7s forwards'
+        topo.style.height = '205px'
+    }
+}

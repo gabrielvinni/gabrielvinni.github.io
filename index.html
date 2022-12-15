@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Vinicius</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
-    <header>
+    <header id="topo">
         <h1 id="logo">GV</h1>
-
-        <nav>
+        <div id="botao" onclick="menu()">
+            <div id="barra1"></div>
+            <div id="barra2"></div>
+            <div id="barra3"></div>
+        </div>
+        <nav id="mn">
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">SOBRE</a></li>
-                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">HABILIDADES</a></li>
                 <li><a href="#">PROJETOS</a></li>
             </ul>
         </nav>
+        
     </header>
     <main>
         <article id="home">
@@ -88,6 +94,7 @@
             <div class="content">
                 <label for="item1">Projeto-Login</label>
                 <a href="https://gabrielvinni.github.io/projeto-login/" target="_blank" rel="external">
+                    
                     <div class="itens" id="item1"></div>
                 </a>
                 
