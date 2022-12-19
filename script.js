@@ -75,6 +75,6 @@ function menu() {
         barra1.style.animation = 'br1 .4s forwards'
         barra2.style.animation = 'br2 .4s forwards'
         barra3.style.animation = 'br3 .4s forwards'
-        topo.style.height = '208px'
+        topo.style.height = '215px'
     }
 }
