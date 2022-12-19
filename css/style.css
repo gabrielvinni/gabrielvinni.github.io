@@ -22,7 +22,7 @@ header {
     height: 208px;
     */
     height: 53px;
-    transition: height 1s;
+    transition: height .5s;
     overflow: hidden;
 }
 
@@ -38,6 +38,7 @@ ul {
 
 header li {
     padding: 10px;
+    border: 1px solid #003441;
 }
 
 header li:hover {
@@ -51,7 +52,6 @@ header a {
 
 nav {
     width: 100%;
-    display: none;
 }
 
 div#botao {
@@ -271,6 +271,7 @@ img.logo {
     border-radius: 10px;
     padding: 5px;
     margin: 4px;
+    display: block;
 }
 
 p.t {
