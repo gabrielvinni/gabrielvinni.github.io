@@ -18,9 +18,6 @@ header {
     background-color: #002129;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*
-    height: 208px;
-    */
     height: 53px;
     transition: height .5s;
     overflow: hidden;
@@ -181,14 +178,17 @@ div#barra3 {
 /* Home */
 
 article#home {
-    height: 490px;
-    margin-bottom: 40px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 #home p {
     font-size: 1.5em;
     margin: auto;
-    max-width: 250px;
     padding-top: 60px;
 }
 
@@ -207,30 +207,30 @@ article#home {
 /* Sobre mim */
 
 article#sobre {
-    height: 490px;
-    color: black;
+    height: 100vh;
+    color: rgb(231, 231, 231);
     background-color: #F4F3EE;
     padding-top: 40px;
     padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #img-sobre {
-    height: 270px;
-    width: 270px;
-    display: block;
-    margin: auto;
+    height: 45vh;
+    width: auto;
     border-radius: 50%;
     border: 4px solid #002129;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
 }
 
 #sobre aside {
-    display: block;
     background-color: rgba(0, 0, 0, 0.384);
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px 15px 0px 15px;
     padding: 10px;
-    width: 80vw;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.459);
 }
 
@@ -245,12 +245,18 @@ article#sobre {
 
 article#habilidades {
     padding: 10px;
-    max-width: 340px;
     margin: auto;
+    max-width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 article#habilidades > h2 {
-    margin-left: 10px;
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
 }
 
 hr.linha {
@@ -271,22 +277,22 @@ img.logo {
     border-radius: 10px;
     padding: 5px;
     margin: 4px;
-    display: block;
 }
 
 p.t {
     font-size: 1.5em;
-    display: inline;
-    position: absolute;
-    top: 20px;
-    left: 100px;
 }
 
 article#habilidades > div {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    margin: 10px;
+    
 
     height: 64px;
     transition: height 400ms;
@@ -294,14 +300,12 @@ article#habilidades > div {
 }
 
 div.BT {
-    position: absolute;
-    left: 260px;
-    top: 25px;
     width: 20px;
     height: 20px;
+    position: relative;
 }
 
-div.BT > #ba1, #ba2 {
+div.BT  #ba1, #ba2 {
     background-color: white;
     width: 2px;
     height: 10px;
@@ -310,16 +314,15 @@ div.BT > #ba1, #ba2 {
 
 #ba1 {
     rotate: 45deg;
-    transform: translateY(0px);
     top: 50%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
 #ba2 {
     rotate: -45deg;
-    top: 45%;
-    left: 50%;
+    top: 44%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 
@@ -346,23 +349,30 @@ div.BT > #ba1, #ba2 {
 /* Projetos */
 
 article#projetos {
-    max-width: 250px;
-    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article#projetos h2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
 }
 
 div.content {
-    display: block;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .content label, div.itens {
     cursor: pointer;
 }
 
-.content label {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
+#projetos a {
+    margin-top: 40px;
+    text-decoration: none;
+    color: white;
 }
 
 div.itens {

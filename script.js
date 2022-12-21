@@ -11,7 +11,7 @@ function txt1() {
     }else {
         ht = 1
         b1.style.animation = 'gira .4s forwards'
-        esp1.style.height = '120px'
+        esp1.style.height = '115px'
         
         cs = 0
         b2.style.animation = 'girav .4s forwards'
@@ -31,7 +31,7 @@ function txt2() {
     }else {
         cs = 1
         b2.style.animation = 'gira .4s forwards'
-        esp2.style.height = '100px'
+        esp2.style.height = '129px'
 
         ht = 0
         b1.style.animation = 'girav .4s forwards'
@@ -51,7 +51,7 @@ function txt3() {
     }else {
         j = 1
         b3.style.animation = 'gira .4s forwards'
-        esp3.style.height = '120px'
+        esp3.style.height = '115px'
 
         ht = 0
         b1.style.animation = 'girav .4s forwards'

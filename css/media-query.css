@@ -1,3 +1,99 @@
 @media screen and (min-width: 481px){
-    
+    header div#botao {
+        display: none;
+    } 
+
+    header {
+        flex-wrap: nowrap;
+        overflow: visible;
+        align-items: center;
+        height: 60px;
+    }
+
+    nav {
+        width: auto;
+        margin-right: 5vw;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    header li {
+        border: 0px;
+        border-radius: 10px;
+        transition: .2s;
+    }
+
+    /* Home area */
+
+    article#home {
+        flex-direction: row;
+    }
+
+    #home p {
+        font-size: 2em;
+    }
+
+    #img-home {
+        height: 70vh;
+        width: auto;
+    }
+
+    /* Sobre mim area */
+
+    article#sobre {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #sobre aside {
+        max-width: 600px;
+        font-size: 1.5em;
+    }
+
+    /* Habilidades */
+
+    article#habilidades {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        height: 400px;
+        position: relative;
+    }
+
+    article#habilidades > h2 {
+        width: 100%;
+        font-size: 3em;
+
+        position: absolute;
+        top: 10%;
+    }
+
+    article#habilidades > div {
+        max-width: 300px;
+    }
+
+    hr.linha {
+        display: none;
+    }
+
+    /* Projetos */
+
+    #projetos h2 {
+        font-size: 3em;
+    }
+
+    #projetos div.content {
+        flex-direction: row;
+    }
+
+    #projetos label {
+        font-size: 1.2em;
+    }
+
+    #projetos a {
+        margin: 40px;
+    }
 }
