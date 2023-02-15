@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
 </head>
-<body>
+<body onresize="mudou_tamanho()">
     <header id="topo">
         <h1 id="logo">GV</h1>
         <div id="botao" onclick="menu()">
@@ -43,51 +43,7 @@
             </aside> 
         </article>
         <article id="habilidades">
-
-            <h2>Habilidades</h2>
-            <hr class="linha">
-            <div id="esp1" onclick="txt1()">
-                <img class="logo" src="imgs/html-logo.png" alt="HTML5">
-                <p class="t">HTML 5</p>
-                <div class="BT" id="b1">
-                    <div id="ba1"></div>
-                    <div id="ba2"></div>
-                </div>
-
-                <p id="phtml">
-                    Linguagem de Marcação de HiperTexto.
-                </p>
-            </div>
-
-            <hr class="linha">
-            <div id="esp2" onclick="txt2()">
-                <img class="logo" src="imgs/css-logo.png" alt="css">
-                <p class="t">CSS 3</p>
-                <div class="BT" id="b2">
-                    <div id="ba1"></div>
-                    <div id="ba2"></div>
-                </div>
-
-                <p id="pcss">
-                    Linguagem de estilo usada para descrever um documento escrito em HTML.
-                </p>
-            </div>
-
-            <hr class="linha">
-            <div id="esp3" onclick="txt3()">
-                <img class="logo" src="imgs/js-logo.png" alt="JavaScript">
-                <p class="t">JavaScript</p>
-                <div class="BT" id="b3">
-                    <div id="ba1"></div>
-                    <div id="ba2"></div>
-                </div>
-
-                <p id="pjs">
-                    Linguagem de programação interpretada estruturada.
-                </p>
-            </div>
-
-            <hr class="linha">
+            
         </article>
 
         <article id="projetos">

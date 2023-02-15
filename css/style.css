@@ -11,7 +11,7 @@ body {
     background-color: #181818;
 }
 
-/* CABEÇALHO */
+/* HEADER */
 
 header {
     display: flex;
@@ -188,8 +188,8 @@ article#home {
 
 #home p {
     font-size: 1.5em;
-    margin: auto;
     padding-top: 60px;
+    margin: auto;
 }
 
 #home strong {
@@ -197,7 +197,7 @@ article#home {
     color: #00A5CF;
 }
 
-#img-home {
+#img-home {  
     display: block;
     margin: auto;
     height: 300px;
@@ -232,6 +232,8 @@ article#sobre {
     margin: 40px 15px 0px 15px;
     padding: 10px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    text-align: justify;
 }
 
 #sobre h2 {
