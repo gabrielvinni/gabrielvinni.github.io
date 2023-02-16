@@ -178,7 +178,7 @@ div#barra3 {
 /* Home */
 
 article#home {
-    height: 95vh;
+    height: 580px;
     display: flex;
     flex-direction: column;
 
@@ -207,8 +207,8 @@ article#home {
 /* Sobre mim */
 
 article#sobre {
-    height: 100vh;
-    color: rgb(231, 231, 231);
+    height: 580px;
+    color: black;
     background-color: #F4F3EE;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -234,6 +234,7 @@ article#sobre {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.459);
     border-radius: 10px;
     text-align: justify;
+    max-width: 600px;
 }
 
 #sobre h2 {
@@ -245,161 +246,8 @@ article#sobre {
 
 /* Habilidades */
 
-article#habilidades {
-    padding: 10px;
-    margin: auto;
-    max-width: 300px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-article#habilidades > h2 {
-    text-align: center;
-    margin: 20px;
-    font-size: 2em;
-}
-
-hr.linha {
-    margin: auto;
-    margin: 10px;
-    border-color: gray;
-}
-
-img.logo {
-    width: 60px;
-    border-radius: 50%;
-}
-
-#phtml, #pcss, #pjs {
-    margin-left: 10px;
-
-    background-color: #302f2f;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 4px;
-}
-
-p.t {
-    font-size: 1.5em;
-}
-
-article#habilidades > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    margin: 10px;
-    
-
-    height: 64px;
-    transition: height 400ms;
-    transition-timing-function: ease;
-}
-
-div.BT {
-    width: 20px;
-    height: 20px;
-    position: relative;
-}
-
-div.BT  #ba1, #ba2 {
-    background-color: white;
-    width: 2px;
-    height: 10px;
-    position: absolute;
-}
-
-#ba1 {
-    rotate: 45deg;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#ba2 {
-    rotate: -45deg;
-    top: 44%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
-
-/* Animação da setinha */
-
-@keyframes gira {
-    0% {
-        rotate: 0deg;
-    }
-    100% {
-        rotate: 180deg;
-    }
-}
-
-@keyframes girav {
-    0% {
-        rotate: 180deg;
-    }
-    100% {
-        rotate: 0deg;
-    }
-}
-
 /* Projetos */
 
-article#projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-article#projetos h2 {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-}
-
-div.content {
-    display: flex;
-    flex-direction: column;
-}
-
-.content label, div.itens {
-    cursor: pointer;
-}
-
-#projetos a {
-    margin-top: 40px;
-    text-decoration: none;
-    color: white;
-}
-
-div.itens {
-    width: 250px;
-    height: 150px;
-    background-color: white;
-}
-
-article#projetos div#item1 {
-    background: url(../imgs/login-img.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-article#projetos div#item2 {
-    background: url(../imgs/cordel-img.png);
-    background-size: cover;
-    background-position: center center;
-}
-
-article#projetos div#item3 {
-    background: url(../imgs/android-img.png);
-    background-size: cover;
-    background-position: center center;
-}
 /* Roda pé */
 
 footer {

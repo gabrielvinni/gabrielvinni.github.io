@@ -30,10 +30,11 @@
 
     article#home {
         flex-direction: row;
+        height: 95vh;
     }
 
     #home p {
-        font-size: 2em;
+        font-size: 2.4em;
     }
 
     #img-home {
@@ -44,6 +45,7 @@
     /* Sobre mim */
 
     article#sobre {
+        height: 100vh;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -55,47 +57,7 @@
     }
 
     /* Habilidades */
-
-    article#habilidades {
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 1000px;
-        height: 400px;
-        position: relative;
-    }
-
-    article#habilidades > h2 {
-        width: 100%;
-        font-size: 3em;
-
-        position: absolute;
-        top: 10%;
-    }
-
-    article#habilidades > div {
-        max-width: 300px;
-    }
-
-    hr.linha {
-        display: none;
-    }
-
+    
     /* Projetos */
 
-    #projetos h2 {
-        font-size: 3em;
-    }
-
-    #projetos div.content {
-        flex-direction: row;
-    }
-
-    #projetos label {
-        font-size: 1.2em;
-    }
-
-    #projetos a {
-        margin: 40px;
-    }
 }
