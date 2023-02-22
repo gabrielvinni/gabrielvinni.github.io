@@ -9,6 +9,16 @@
         overflow: visible;
         align-items: center;
         height: 60px;
+        background-color: white;
+        color: black;
+    }
+
+    header h1 {
+        text-shadow: none;
+    }
+
+    nav a {
+        color: black;
     }
 
     nav {
@@ -21,8 +31,9 @@
     }
 
     header li {
+        margin-right: 8px;
         border: 0px;
-        border-radius: 10px;
+        border-radius: 20px;
         transition: .2s;
     }
 
@@ -51,8 +62,8 @@
     }
 
     #sobre aside {
-        max-width: 600px;
-        font-size: 1.5em;
+        max-width: 650px;
+        font-size: 1.7em;
         padding: 20px;
     }
 
