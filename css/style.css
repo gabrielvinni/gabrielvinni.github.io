@@ -44,7 +44,7 @@ header li {
 }
 
 header li:hover {
-    background-color: #0089ac;
+    background-color: #00b9e7;
 }
 
 header a {
@@ -215,7 +215,7 @@ article#home {
 article#sobre {
     background-color: #00A5CF;
     color: white;
-    height: 580px;
+    padding-bottom: 200px;
 
     display: flex;
     justify-content: center;
@@ -238,6 +238,30 @@ article#sobre {
 }
 
 /* Habilidades */
+
+article#habilidades {
+    display: flex;
+    justify-content: center;
+}
+
+div#container {
+    transform: translateY(-80px);
+    height: 600px;
+    width: 280px;
+
+    background-color: white;
+    border: 0px solid rgba(128, 128, 128, 0.514);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+article#habilidades div.item {
+    border: 1px solid rgba(128, 128, 128, 0.514);
+}
 
 /* Projetos */
 

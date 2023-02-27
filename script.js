@@ -1,7 +1,7 @@
 var mn = 0
 
 function mudou_tamanho() {
-    if (window.innerWidth >= 481){
+    if (window.innerWidth >= 820){
         topo.style.height = '53px'
         mn = 0
         barra1.style.animation = 'br1v .4s forwards'

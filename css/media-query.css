@@ -8,7 +8,6 @@
         flex-wrap: nowrap;
         overflow: visible;
         align-items: center;
-        height: 60px;
         background-color: white;
         color: black;
     }
@@ -41,30 +40,37 @@
 
     article#home {
         flex-direction: row;
-        height: 95vh;
+        height: 52vh;
+        margin-top: 200px;
     }
 
     #home p {
         font-size: 2.4em;
+        transform: translateY(-100px);
     }
 
     #img-home {
-        height: 70vh;
+        height: 65vh;
         width: auto;
     }
 
     /* Sobre mim */
 
     article#sobre {
-        height: 100vh;
         flex-direction: row;
         justify-content: space-around;
+
+        padding-top: 24vh;
+        
     }
 
     #sobre aside {
         max-width: 650px;
         font-size: 1.7em;
-        padding: 20px;
+    }
+
+    #sobre h2 {
+        font-size: 1.4em;
     }
 
     /* Habilidades */
