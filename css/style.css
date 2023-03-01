@@ -184,7 +184,8 @@ div#barra3 {
 
 article#home {
     font-family: var(--fontTitulo);
-    height: 580px;
+    height: 310px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
 
@@ -224,7 +225,7 @@ article#sobre {
 
 #sobre aside {
     font-size: 1.3em;
-    margin: 40px 15px 0px 15px;
+    margin-top: 28vh;
     padding: 10px;
     border-radius: 10px;
     text-align: justify;
@@ -233,7 +234,7 @@ article#sobre {
 }
 
 #sobre h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 40px;
 }
 
