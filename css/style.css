@@ -184,7 +184,7 @@ div#barra3 {
 
 article#home {
     font-family: var(--fontTitulo);
-    height: 310px;
+    height: 410px;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@ article#home {
 }
 
 #home p {
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-top: 60px;
     margin: auto;
 }
@@ -202,13 +202,16 @@ article#home {
 #home strong {
     font-size: 1.3em;
     color: #00A5CF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.322);
 }
 
 #img-home {  
     display: block;
     margin: auto;
     height: 300px;
-    width: 300px;
+    width: auto;
+
+    transform: translateY(50px);
 }
 
 /* Sobre mim */
@@ -216,7 +219,7 @@ article#home {
 article#sobre {
     background-color: #00A5CF;
     color: white;
-    padding-bottom: 200px;
+    padding-bottom: 170px;
 
     display: flex;
     justify-content: center;
@@ -225,7 +228,7 @@ article#sobre {
 
 #sobre aside {
     font-size: 1.3em;
-    margin-top: 28vh;
+    margin-top: 20vh;
     padding: 10px;
     border-radius: 10px;
     text-align: justify;
@@ -245,13 +248,13 @@ article#habilidades {
     justify-content: center;
 }
 
-div#container {
+#habilidades div#container {
     transform: translateY(-80px);
-    height: 600px;
-    width: 280px;
+    max-width: 400px;
+    margin: 20px;
 
     background-color: white;
-    border: 0px solid rgba(128, 128, 128, 0.514);
+    border: 1px solid rgba(128, 128, 128, 0.514);
     border-radius: 30px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
 
@@ -261,10 +264,64 @@ div#container {
 }
 
 article#habilidades div.item {
-    border: 1px solid rgba(128, 128, 128, 0.514);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.514);
+    text-align: center;
+}
+
+article#habilidades span {
+    font-size: 2.8em;
+    background-color: #0BDB92;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+}
+
+#habilidades p {
+    padding: 0px 10px 20px 10px;
+    font-size: 1.2em;
 }
 
 /* Projetos */
+
+#projetos h2 {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projetos div#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 900px;
+}
+
+#projetos div.item {
+    height: 160px;
+    min-width: 280px;
+    background-color: #0BDB92;
+    margin: 10px;
+    border-radius: 10px;
+
+    transition: 0.5s;
+}
+
+#projetos div.item:hover {
+    padding: 5px;
+}
 
 /* Roda pé */
 

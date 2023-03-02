@@ -52,6 +52,7 @@
     #img-home {
         height: 65vh;
         width: auto;
+        transform: translateY(0px);
     }
 
     /* Sobre mim */
