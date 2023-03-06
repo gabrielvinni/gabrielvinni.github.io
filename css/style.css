@@ -15,6 +15,14 @@
     font-family: var(--fontTexto);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 174, 174);
+}
+
 /* HEADER */
 
 header {
@@ -182,7 +190,7 @@ div#barra3 {
 
 /* Home */
 
-article#home {
+#home {
     font-family: var(--fontTitulo);
     height: 410px;
     margin-top: 100px;
@@ -216,7 +224,7 @@ article#home {
 
 /* Sobre mim */
 
-article#sobre {
+#sobre {
     background-color: #00A5CF;
     color: white;
     padding-bottom: 170px;
@@ -243,7 +251,7 @@ article#sobre {
 
 /* Habilidades */
 
-article#habilidades {
+#habilidades {
     display: flex;
     justify-content: center;
 }
@@ -263,7 +271,7 @@ article#habilidades {
     overflow: hidden;
 }
 
-article#habilidades div.item {
+#habilidades div.item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +281,7 @@ article#habilidades div.item {
     text-align: center;
 }
 
-article#habilidades span {
+#habilidades span {
     font-size: 2.8em;
     background-color: #0BDB92;
     border-radius: 50%;
@@ -292,7 +300,7 @@ article#habilidades span {
 #projetos h2 {
     text-align: center;
     font-size: 1.8em;
-    margin-bottom: 70px;
+    margin: 90px 0px 70px 0px;
 }
 
 #projetos {

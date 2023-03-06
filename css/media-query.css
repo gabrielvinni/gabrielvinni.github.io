@@ -38,7 +38,7 @@
 
     /* Home */
 
-    article#home {
+    #home {
         flex-direction: row;
         height: 52vh;
         margin-top: 200px;
@@ -57,7 +57,7 @@
 
     /* Sobre mim */
 
-    article#sobre {
+    #sobre {
         flex-direction: row;
         justify-content: space-around;
 
