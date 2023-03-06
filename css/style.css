@@ -292,6 +292,7 @@ article#habilidades span {
 #projetos h2 {
     text-align: center;
     font-size: 1.8em;
+    margin-bottom: 70px;
 }
 
 #projetos {
@@ -306,7 +307,7 @@ article#habilidades span {
     align-items: center;
     flex-wrap: wrap;
 
-    max-width: 900px;
+    max-width: 1500px;
 }
 
 #projetos div.item {
@@ -319,9 +320,6 @@ article#habilidades span {
     transition: 0.5s;
 }
 
-#projetos div.item:hover {
-    padding: 5px;
-}
 
 /* Roda pé */
 

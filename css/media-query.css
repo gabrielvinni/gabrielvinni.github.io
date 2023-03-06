@@ -74,6 +74,17 @@
     }
 
     /* Habilidades */
+
+    #habilidades div#container {
+        flex-direction: row;
+        max-width: 60vw;
+    }
+
+    #habilidades div.item {
+        border-bottom: 0px;
+        border-left: 1px solid rgba(128, 128, 128, 0.514);
+        width: 100vw;
+    }
     
     /* Projetos */
 
