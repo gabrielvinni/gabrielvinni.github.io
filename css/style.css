@@ -17,11 +17,10 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 110px;
 }
 
-body {
-    background-color: rgb(255, 174, 174);
-}
+
 
 /* HEADER */
 
@@ -47,17 +46,18 @@ ul {
 }
 
 header li {
-    padding: 10px;
     border: 1px solid #00b9e7;
 }
 
-header li:hover {
+header a:hover {
     background-color: #00b9e7;
 }
 
 header a {
+    display: block;
     text-decoration: none;
     color: white;
+    padding: 10px;
 }
 
 nav {
@@ -314,20 +314,32 @@ div#barra3 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
-    max-width: 1500px;
 }
 
 #projetos div.item {
     height: 160px;
     min-width: 280px;
-    background-color: #0BDB92;
     margin: 10px;
-    border-radius: 10px;
-
-    transition: 0.5s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
 }
 
+#projetos img {
+    width: 280px;
+    border-radius: 15px;
+    transform: translateY(3px);
+    
+}
+
+#projetos div#pg-login {
+    background-image: url(../imgs/pg-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projetos p {
+    
+}
 
 /* Roda pé */
 

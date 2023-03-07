@@ -18,6 +18,30 @@
 
     nav a {
         color: black;
+        position: relative;
+        transition: 0.2s;
+    }
+
+    nav a::after {
+        content: "";
+        background-color: #00b9e7;
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transition: 0.2s;
+        border-radius: 10px;
+    }
+
+    nav a:hover {
+        background: none;
+        color: #008db1;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+        left: 0;
     }
 
     nav {
@@ -32,8 +56,6 @@
     header li {
         margin-right: 8px;
         border: 0px;
-        border-radius: 20px;
-        transition: .2s;
     }
 
     /* Home */
@@ -87,5 +109,13 @@
     }
     
     /* Projetos */
+
+    #projetos div.item {
+        height: auto;
+    }
+
+    #projetos img {
+        width: 380px;
+    }
 
 }
