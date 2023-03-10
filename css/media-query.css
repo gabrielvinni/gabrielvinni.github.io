@@ -111,11 +111,8 @@
     /* Projetos */
 
     #projetos div.item {
-        height: auto;
-    }
-
-    #projetos img {
-        width: 380px;
+      width: 380px;
+      height: 230px;
     }
 
 }
