@@ -344,6 +344,10 @@ div#barra3 {
     opacity: 1;
 }
 
+#projetos .link-div:hover a{
+    display: block;
+}
+
 #projetos .link-div a {
     border: 2px solid #0BDB92;
     text-decoration: none;
@@ -351,6 +355,7 @@ div#barra3 {
     border-radius: 25px;
     color: white;
     transition: 0.2s;
+    display: none;
 }
 
 #projetos .link-div a:hover {
