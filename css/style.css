@@ -345,7 +345,7 @@ div#barra3 {
 }
 
 #projetos .link-div:hover a{
-    display: block;
+    z-index: 0;
 }
 
 #projetos .link-div a {
@@ -355,7 +355,7 @@ div#barra3 {
     border-radius: 25px;
     color: white;
     transition: 0.2s;
-    display: none;
+    z-index: -2;
 }
 
 #projetos .link-div a:hover {
