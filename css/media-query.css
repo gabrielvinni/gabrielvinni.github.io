@@ -8,12 +8,21 @@
         flex-wrap: nowrap;
         overflow: visible;
         align-items: center;
+        
         background-color: white;
         color: black;
     }
 
-    header h1 {
+    header h1 a{
+        color: black;
         text-shadow: none;
+        margin-left: 10px;
+        transition: .2s;
+    }
+
+    header h1 a:hover {
+        color: #00b9e7;
+        background-color: white;
     }
 
     nav a {
