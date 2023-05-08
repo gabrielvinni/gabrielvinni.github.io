@@ -18,49 +18,81 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
+    overflow-x: hidden;
 }
 
 /* HEADER */
 
 header {
+    position: relative;
+    top: 0;
     display: flex;
     background-color: #00A5CF;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 53px;
-    transition: height .5s;
-    overflow: hidden;
+    align-items: center;
+    height: 60px;
     color: white;
+    width: 100%;
+    z-index: 2;
 }
 
-header h1 a {
+.topo-preso {
+    position: fixed;
+}
+
+#logo a {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
-    transform: translateY(-4px);
     transition: .2s;
-}
-
-ul {
-    list-style: none;
-    text-align: center;
-}
-
-header li {
-    border: 1px solid #00b9e7;
-}
-
-header a:hover {
-    background-color: #00b9e7;
-}
-
-header a {
-    display: block;
     text-decoration: none;
+    margin: 10px;
+    padding: 5px;
     color: white;
-    padding: 10px;
+    position: relative;
+}
+
+#logo a:hover {
+    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.308);
 }
 
 nav {
+    position: fixed;
+    top: 60px;
+    height: max-content;
     width: 100%;
+    background-color: #008caf;
+    z-index: 2;
+    left: 100%;
+    transition: .5s;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    height: 100%;
+}
+
+nav a {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding-right: 50px;
+    font-size: 1.4em;
+
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #00A5CF;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
 }
 
 div#botao {
@@ -69,8 +101,20 @@ div#botao {
     width: 30px;
     position: relative;
     cursor: pointer;
-    margin-top: 15px;
 }
+
+.menu-aberto {
+    left: 0%;
+}
+
+.botao-fechado #barra1 {animation: br1v .5s normal forwards;}
+.botao-aberto #barra1 {animation: br1 .5s normal forwards;}
+
+.botao-fechado #barra2 {animation: br2v .5s normal forwards;}
+.botao-aberto #barra2 {animation: br2 .5s normal forwards;}
+
+.botao-fechado #barra3 {animation: br3v .5s normal forwards;}
+.botao-aberto #barra3 {animation: br3 .5s normal forwards;}
 
 div#barra1, div#barra2, div#barra3 {
     height: 3px;

@@ -12,20 +12,18 @@
 <body onresize="mudou_tamanho()">
     <header id="topo">
         <h1 id="logo"><a href="#">GV</a></h1>
-        <div id="botao" onclick="menu()">
+        <div class="botao-fechado" id="botao" onclick="BTmenu()">
             <div id="barra1"></div>
             <div id="barra2"></div>
             <div id="barra3"></div>
-        </div>
-        <nav>
+        </div>  
+        <nav id="menu">
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#habilidades">HABILIDADES</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#sobre" onclick="BTmenuSome()">SOBRE</a></li>
+                <li><a href="#habilidades" onclick="BTmenuSome()">HABILIDADES</a></li>
+                <li><a href="#projetos" onclick="BTmenuSome()">PROJETOS</a></li>
             </ul>
         </nav>
-        
     </header>
     <main>
         <article id="home">
@@ -120,6 +118,6 @@
         </p>
         
     </footer>
-    <script src="script.js"></script>
+    <script src="teste-script.js"></script>
 </body>
 </html>
