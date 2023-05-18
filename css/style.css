@@ -12,6 +12,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
     font-family: var(--fontTexto);
 }
 
@@ -24,213 +25,131 @@ html {
 /* HEADER */
 
 header {
-    position: relative;
-    top: 0;
     display: flex;
-    background-color: #00A5CF;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 60px;
-    color: white;
-    width: 100%;
-    z-index: 2;
+    padding: 1rem;
+    background-color: #00A5CF;
 }
 
-.topo-preso {
-    position: fixed;
-}
-
-#logo a {
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
-    transition: .2s;
+header a {
     text-decoration: none;
-    margin: 10px;
-    padding: 5px;
     color: white;
-    position: relative;
 }
 
-#logo a:hover {
-    box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.308);
+#logo {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-nav {
-    position: fixed;
-    top: 60px;
-    height: max-content;
-    width: 100%;
-    background-color: #008caf;
-    z-index: 2;
-    left: 100%;
-    transition: .5s;
-}
+/* Menu */
 
-nav ul {
+#menu {
     list-style: none;
-    text-align: right;
-    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
-}
-
-nav li {
-    height: 100%;
-}
-
-nav a {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100%;
-    padding-right: 50px;
-    font-size: 1.4em;
-
-    text-decoration: none;
-    color: white;
-}
-
-nav a:hover {
     background-color: #00A5CF;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.397);
+    height: 0;
+    transition: .7s;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-bottom: 2px solid #0090b4;
+
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0;
+    z-index: 2;
 }
 
-div#botao {
-    margin-right: 25px;
-    height: 20px;
-    width: 30px;
-    position: relative;
+#menu a {
+    display: block;
+    padding: 1rem 0.5rem;
+    margin: 0 1rem;
+    font-size: 1.1em;
+    border-bottom: 1px solid #0090b4;
+}
+
+#menu a:hover {
+    background-color: #0090b4;
+}
+
+#nav.ativo #menu {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
+/* Botão-Menu */
+
+#btn-mobile {
     cursor: pointer;
+    padding: .5rem;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    gap: 10px;
 }
 
-.menu-aberto {
-    left: 0%;
-}
-
-.botao-fechado #barra1 {animation: br1v .5s normal forwards;}
-.botao-aberto #barra1 {animation: br1 .5s normal forwards;}
-
-.botao-fechado #barra2 {animation: br2v .5s normal forwards;}
-.botao-aberto #barra2 {animation: br2 .5s normal forwards;}
-
-.botao-fechado #barra3 {animation: br3v .5s normal forwards;}
-.botao-aberto #barra3 {animation: br3 .5s normal forwards;}
-
-div#barra1, div#barra2, div#barra3 {
-    height: 3px;
+#hamburger {
+    display: block;
     width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.linha {
+    width: 100%;
+    height: 3px;
     background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.507);
-}
-
-div#barra1 {
+    border-radius: 4px;
     position: absolute;
-    top: 0%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.479);
+    left: 0;
+}
+.linha1 {top: 0;}
+.linha2 {top: 50%;}
+.linha3 {top: 100%;}
+
+.btn-animation .linha1 {
+    /* animation: linha-1 .6s normal forwards; */
 }
 
-div#barra2 {
-    transform: translatey(10px);
-    margin: auto;
+.btn-volta .linha1 {
+    animation: l1-volta .6s reverse forwards;
 }
 
-div#barra3 {
-    position: absolute;
-    top: 100%;
+/* Animação do Botão */
+
+@keyframes linha-1 {
+    50% {top: 50%; transform: rotate(0deg);}
+    100% {top: 50%; transform: rotate(45deg);}
+}
+@keyframes linha-2 {
+    50% {left: 13px; height: 1; width: 20%; opacity: 0;}
+    100% {left: 13px; height: 0; width: 20%; opacity: 0;}
+}
+@keyframes linha-3 {
+    50% {top: 50%; transform: rotate(0deg);}
+    100% {top: 50%; transform: rotate(135deg);}
 }
 
-/* ANIMAÇÃO - BOTÃO DO MENU */
-
-@keyframes br1 {
-    0% {
-        top: 0%;
-        rotate: 0deg;
-    }
-
-    50% {
-        top: 50%;
-        rotate: 0deg;
-    }
-
-    100% {
-        top: 50%;
-        rotate: 135deg;
-    }
+@keyframes l1-volta {
+    50% {top: 50%; transform: rotate(0deg);}
+    100% {top: 0;}
 }
-
-@keyframes br1v {
-    0% {
-        top: 50%;
-        rotate: 135deg;
-    }
-    50% {
-        top: 50%;
-        rotate: 0deg;
-    }
-    100% {
-        top: 0%;
-        rotate: 0deg;
-    }
+@keyframes l2-volta {
+    50% {opacity: 0; width: 20%; height: 0; left: 13px;}
+    100% {opacity: 1; width: 100%; height: 3px; left: 0;}
 }
-
-@keyframes br2 {
-    50% {
-        opacity: 0;
-        width: 10px;
-        height: 2px;
-    }
-
-    100% {
-        opacity: 0;
-    }
+@keyframes l3-volta {
+    50% {top: 50%; transform: rotate(0deg);}
+    100% {top: 100%;}
 }
-
-@keyframes br2v {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-        width: 10px;
-        height: 2px;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes br3 {
-    0%{
-        top: 100%;
-        rotate: 0deg;
-    }
-
-    50% {
-        top: 50%;
-        rotate: 0deg;
-    }
-
-    100% {
-        top: 50%;
-        rotate: 45deg;
-    }
-}
-
-@keyframes br3v {
-    0% {
-        top: 50%;
-        rotate: 45deg;
-    }
-    50% {
-        top: 50%;
-        rotate: 0deg;
-    }
-    100% {
-        top: 100%;
-        rotate: 0deg;
-    }
-}
-
 /* Home */
 
 #home {

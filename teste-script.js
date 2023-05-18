@@ -1,24 +1,9 @@
-function BTmenu() {
-    const botao = document.querySelector("#botao");
-    const menu = document.querySelector("#menu");
-    const topo = document.querySelector('#topo');
-    botao.classList.toggle("botao-aberto");
-    menu.classList.toggle("menu-aberto");
-    topo.classList.toggle('topo-preso');
-    menu.style.transition = '.5s';
-}
+const btnMobile = document.querySelector("#btn-mobile");
+btnMobile.addEventListener('click', abrirMenu);
 
-function BTmenuSome() {
-    const botao = document.querySelector("#botao");
-    const menu = document.querySelector("#menu");
-    const topo = document.querySelector('#topo');
-    if (window.innerWidth <= 820) {
-        botao.classList.toggle('botao-aberto');
-        menu.classList.toggle('menu-aberto');
-        topo.classList.toggle('topo-preso');
-        menu.style.transition = 'none';
-    } 
-    else if (topo.classList = 'topo-preso') {
-        topo.classList.toggle('topo-preso');
-    }
+function abrirMenu() {
+    btnMobile.classList.toggle('btn-animation')
+
+    const nav = document.querySelector("#nav");
+    nav.classList.toggle('ativo')
 }

@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
 </head>
 <body>
-    <header id="topo">
-        <h1 id="logo"><a href="#">GV</a></h1>
-        <div class="botao-fechado" id="botao" onclick="BTmenu()">
-            <div id="barra1"></div>
-            <div id="barra2"></div>
-            <div id="barra3"></div>
-        </div>  
-        <nav id="menu">
-            <ul>
-                <li><a href="#sobre" onclick="BTmenuSome()">SOBRE</a></li>
-                <li><a href="#habilidades" onclick="BTmenuSome()">HABILIDADES</a></li>
-                <li><a href="#projetos" onclick="BTmenuSome()">PROJETOS</a></li>
+    <header id="header">
+        <a href="#" id="logo">GV</a> 
+        <nav id="nav">
+            <button id="btn-mobile" class="btn-volta">
+                <div id="hamburger">
+                    <div class="linha linha1"></div>
+                    <div class="linha linha2"></div>
+                    <div class="linha linha3"></div>
+                </div>
+            </button>
+            <ul id="menu">
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#habilidades">HABILIDADES</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +37,7 @@
             <aside>
                 <h2>Oi! Meu nome é Gabriel, muito prazer.</h2>
                 <p>
-                    Estou estudando desenvolvimento web a mais ou menos 7 meses, e esse site que você está agora foi completamente feito por mim usando as tecnologias abaixo.
+                    Estou estudando desenvolvimento web a mais ou menos 1 ano, e esse site que você está agora foi completamente feito por mim usando as tecnologias abaixo.
                 </p>
             </aside> 
         </article>
@@ -76,21 +78,21 @@
             <h2>Projetos Feitos</h2>
 
             <div id="container">
-                <div id="pg-login" class="item" onclick="pag1()">
+                <div id="pg-login" class="item">
                     <div class="link-div" id="lk-login">
                        <p>Um formulário que se adapta com o tamanho da tela.</p>
                        <a href="https://gabrielvinni.github.io/projeto-login/" target="_blank">ver página</a>
                     </div>
                 </div>
 
-                <div id="pg-cordel" class="item" onclick="pag2()">
+                <div id="pg-cordel" class="item">
                     <div class="link-div" id="lk-cordel">
                         <p>página com efeito de paralax no fundo usando a prorpiedade background.</p>
                         <a href="https://gabrielvinni.github.io/projeto-cordel/" target="_blank">ver página</a>
                     </div>
                 </div>
 
-                <div id="pg-android" class="item" onclick="pag3()">
+                <div id="pg-android" class="item">
                     <div class="link-div" id="lk-android">
                         <p>uma página de curiosidade sobre o android.</p>
                         <a href="https://gabrielvinni.github.io/projeto-android/" target="_blank">ver página</a>
