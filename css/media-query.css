@@ -1,7 +1,81 @@
 @media screen and (min-width: 820px){
     /* HEADER */
     
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 1rem;
+        background-color: white;
+    }
     
+    header a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #logo {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    /* Menu */
+
+    #menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        height: auto;
+        transition: none;
+        visibility: visible;
+        overflow-y: auto;
+        border-bottom: none;
+
+        position: static;
+        width: auto;
+        z-index: 2;
+    }
+
+    #menu a {
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        font-size: 1.1em;
+        border-bottom: none;
+    }
+
+    #menu a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #00A5CF;
+        position: relative;
+        left: 50%;
+        transition: .3s;
+        border-radius: 5px;
+    }
+
+    #menu a:hover {
+        background-color: white;
+    }
+
+    #menu a:hover::after {
+        left: 0;
+        width: 100%;
+    }
+
+    #nav.ativo #menu {
+        height: auto;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #btn-mobile {
+        display: none;
+    }
 
     /* Home */
 
